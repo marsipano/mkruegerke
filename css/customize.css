@@ -1,0 +1,18 @@
+body {
+    padding: 3.4rem 2rem 2rem 2rem;
+}
+
+#skiplink {
+    Position: absolute;
+    Top: auto;
+    Left: -10000px;
+    Width: 1px;
+    Height: 1px;
+    Overflow: hidden;
+}
+
+#skiplink:focus {
+    Left: auto;
+    Width: auto;
+    Height: auto;
+}
