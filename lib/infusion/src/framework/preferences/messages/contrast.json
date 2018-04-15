@@ -1,0 +1,10 @@
+{
+    "contrast-default": "Standard",
+    "contrast-bw": "schwarz auf weiss",
+    "contrast-wb": "weiss auf schwarz",
+    "contrast-by": "schwarz auf gelb",
+    "contrast-yb": "gelb auf schwarz",
+    "contrast-lgdg": "geringer Kontrast",
+    "contrastLabel": "Farbe und Kontrast",
+    "contrastDescr": "Text- und Hintergrundfarbe festlegen:"
+}

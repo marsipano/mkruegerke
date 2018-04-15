@@ -1,0 +1,9 @@
+{
+    "textFont-default": "Standard",
+    "textFont-times": "Times New Roman",
+    "textFont-comic": "Comic Sans",
+    "textFont-arial": "Arial",
+    "textFont-verdana": "Verdana",
+    "textFontLabel": "Schriftart",
+    "textFontDescr": "folgende Schriftart nutzen:"
+}
