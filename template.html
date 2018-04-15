@@ -19,14 +19,30 @@
 </head>
 
 <body>
-    <!-- Skiplink -->
-    <a href="#content" class="sr-only sr-only-focusable">Zum Inhalt springen</a>
+    <nav class="demo">
+        <a href="#" class="brand">
+            <img class="logo" src="images/input-checked.png" />
+            <span>Pr&uuml;fungstraining</span>
+        </a>
+
+        <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">Men&uuml;</label>
+
+        <div class="menu">
+            <a href="#" class="pseudo button icon-picture">Demo</a>
+            <a href="#" class="button icon-puzzle">Plugins</a>
+        </div>
+    </nav>
+
+    </div>
+
     <!-- Infusion UIOptions -->
     <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
         <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
         <div class="fl-panelBar">
             <span class="fl-prefsEditor-buttons">
-                <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> zur&uuml;cksetzen</button>
+              <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> zur&uuml;cksetzen</button>
             <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> ein-/ausblenden</button>
             </span>
         </div>
