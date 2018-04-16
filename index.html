@@ -20,17 +20,18 @@
             <a href="#inhalt" id="skiplink">Hauptregion der Seite anspringen</a>
         </div>
         <nav>
-            <a href="#" class="brand">
+            <a href="index.html" class="brand">
                 <img class="logo" src="img/input-checked.png">
                 <span>Pr&uuml;fungstraining</span>
             </a>
-            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation">
+            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation" value="Hauptnavigation">
             <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
             <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
-                <a href="#" class="button">Multiple</a>
-                <a href="#" class="button">Simple</a>
-                <a href="#" class="button">Categories</a>
-                <a href="#" class="button">Users</a>
+                <a href="training.html" class="pseudo button">Training</a>
+                <a href="index.html" class="pseudo button">Fortschritt</a>
+                <a href="index.html" class="pseudo button">Profil</a>
+                <a href="index.html" class="pseudo button">Verwaltung</a>
+                <a href="index.html" class="pseudo button">Logout</a>
             </div>
         </nav>
         <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
@@ -57,32 +58,35 @@
                         <h1>Willkommen</h1>
                     </header>
                     <footer>
-                        <em>beim Pr&uuml;fungstrainer der blista IT-Ausbildung</em>
+                        <em>beim Pr&uuml;fungstraining der blista IT-Ausbildung</em>
                     </footer>
                 </article>
                 <article class="card">
                     <header>
-                        <h3>Bitte melden Sie sich an:</h3>
+                        <h4>Zitat des Tages</h4>
                     </header>
-                    <footer>
-                        <form>
-                            <fieldset>
-                                <input type="email" placeholder="Username" class="stack">
-                                <input type="password" placeholder="Passwort" class="stack">
-                                <button class="stack">Login</button>
-                            </fieldset>
-                        </form>
-                    </footer>
-                </article>
-            </div>
-            <div>
-                <article class="card">
-                    <img src="img/einstein.jpg" alt="Albert Einstein beim Lesen eines Buches">
+                    <img src="img/einstein.jpg" alt="Albert Einstein in seinem Arbeitszimmer">
                     <footer>
                         <blockquote>
                             Ich habe keine besondere Begabung,<br> sondern bin nur leidenschaftlich neugierig.<br>
                             <strong>Albert Einstein</strong>
                         </blockquote>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <header>
+                        <h3>Bitte melden Sie sich an:</h3>
+                    </header>
+                    <footer>
+                        <form action="training.html">
+                            <fieldset>
+                                <input type="email" placeholder="Username" class="stack">
+                                <input type="password" placeholder="Passwort" class="stack">
+                                <input type="submit" value="Login" class="button stack">
+                            </fieldset>
+                        </form>
                     </footer>
                 </article>
             </div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prüfungstrainer Template</title>
+    <!-- Infusion UI Options-->
+    <link rel="stylesheet" href="css/infusion.css">
+    <script type="text/javascript" src="infusion/infusion-uiOptions.js"></script>
+    <!-- Picnic CSS und Anpassungen  -->
+    <link rel="stylesheet" href="css/picnic.min.css">
+    <link rel="stylesheet" href="css/customize.css">
+</head>
+
+<body>
+    <header>
+        <div role="navigation" aria-label="Sprunglink">
+            <a href="#inhalt" id="skiplink">Hauptregion der Seite anspringen</a>
+        </div>
+        <nav>
+            <a href="index.html" class="brand">
+                <img class="logo" src="img/input-checked.png">
+                <span>Pr&uuml;fungstraining</span>
+            </a>
+            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation" value="Hauptnavigation">
+            <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
+            <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
+                <a href="training.html" class="pseudo button">Training</a>
+                <a href="index.html" class="pseudo button">Fortschritt</a>
+                <a href="index.html" class="pseudo button">Profil</a>
+                <a href="index.html" class="pseudo button">Verwaltung</a>
+                <a href="index.html" class="pseudo button">Logout</a>
+            </div>
+        </nav>
+        <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+            <!-- This is the div that will contain the Preference Editor component -->
+            <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+            <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+            <div class="fl-panelBar">
+                <span class="fl-prefsEditor-buttons">
+              <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> reset</button>
+                <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> anpassen </button>
+                </span>
+            </div>
+        </div>
+        <div class="flc-toc-tocContainer" role="navigation" aria-label="Inhaltsverzeichnis"> </div>
+    </header>
+
+    <!-- Content starts here -->
+    <main id="inhalt" tabindex="-1">
+
+        <div class="flex one two-800">
+            <div>
+                <article class="card">
+                    <header>
+                        <h1>Training</h1>
+                    </header>
+                    <img src="img/konfuzius.gif" alt="Konfuzius Statue">
+                    <footer>
+                        <blockquote>
+                            Lernen und nicht denken ist unnütz.<br> Denken und nicht lernen ist zwecklos.<br>
+                            <strong>Konfuzius</strong>
+                        </blockquote>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h3>Neues Training beginnen</h4>
+                    </header>
+                    <footer>
+                        bla bla
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <header>
+                        <h3>laufende Trainings:</h3>
+                    </header>
+                    <footer>
+                        bla bla
+                    </footer>
+                </article>
+            </div>
+        </div>
+
+    </main>
+    <!-- End of Content -->
+
+    <!-- Initialize UIOptions -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                tocTemplate: "infusion/src/components/tableOfContents/html/TableOfContents.html",
+                terms: {
+                    templatePrefix: "infusion/src/framework/preferences/html",
+                    messagePrefix: "infusion/src/framework/preferences/messages"
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
