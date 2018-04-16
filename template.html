@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Prüfungstrainer Template</title>
     <!-- Infusion UI Options-->
-    <link rel="stylesheet" href="css/infusion.css" />
+    <link rel="stylesheet" href="css/infusion.css">
     <script type="text/javascript" src="infusion/infusion-uiOptions.js"></script>
     <!-- Picnic CSS und Anpassungen  -->
-    <link rel="stylesheet" href="css/picnic.min.css" />
-    <link rel="stylesheet" href="css/customize.css" />
+    <link rel="stylesheet" href="css/picnic.min.css">
+    <link rel="stylesheet" href="css/customize.css">
 </head>
 
 <body>
@@ -19,23 +19,20 @@
         <div role="navigation" aria-label="Sprunglink">
             <a href="#inhalt" id="skiplink">Hauptregion der Seite anspringen</a>
         </div>
-
         <nav>
             <a href="#" class="brand">
-                <img class="logo" src="img/input-checked.png" />
+                <img class="logo" src="img/input-checked.png">
                 <span>Pr&uuml;fungstraining</span>
             </a>
-            <input id="hauptnavigation" type="checkbox" class="show">
+            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation">
             <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
-            <div class="menu" role="navigation" aria-label="Hauptnavigation">
+            <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
                 <a href="#" class="button">Multiple</a>
                 <a href="#" class="button">Simple</a>
                 <a href="#" class="button">Categories</a>
                 <a href="#" class="button">Users</a>
-                <a href="#" class="button">Login</a>
             </div>
         </nav>
-
         <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
             <!-- This is the div that will contain the Preference Editor component -->
             <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
@@ -53,31 +50,43 @@
     <!-- Content starts here -->
     <main id="inhalt" tabindex="-1">
 
-    <div class="flex three">
-        <div>
-            <article class="card">
-                <header>
-                    <h1>Willkommen</h1>
-                </header>
-            <footer>
-                    <em>                beim Pr&uuml;fungstrainer
-                            der blista IT-Ausbildung</em>
-            </footer>
-            </article>
-        </div>
-        <div class="two-third">
-            <article class="card">
-            <img src="img/einstein.jpg">
-            <footer>
-                    <blockquote>
-                            Ich habe keine besondere Begabung,<br/> 
-                            sondern bin nur leidenschaftlich neugierig.<br/>
+        <div class="flex one two-800">
+            <div>
+                <article class="card">
+                    <header>
+                        <h1>Willkommen</h1>
+                    </header>
+                    <footer>
+                        <em>beim Pr&uuml;fungstrainer der blista IT-Ausbildung</em>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h3>Bitte melden Sie sich an:</h3>
+                    </header>
+                    <footer>
+                        <form>
+                            <fieldset>
+                                <input type="email" placeholder="Username" class="stack">
+                                <input type="password" placeholder="Passwort" class="stack">
+                                <button class="stack">Login</button>
+                            </fieldset>
+                        </form>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/einstein.jpg" alt="Albert Einstein beim Lesen eines Buches">
+                    <footer>
+                        <blockquote>
+                            Ich habe keine besondere Begabung,<br> sondern bin nur leidenschaftlich neugierig.<br>
                             <strong>Albert Einstein</strong>
                         </blockquote>
-            </footer>
-            </article>
+                    </footer>
+                </article>
+            </div>
         </div>
-    </div>
 
     </main>
     <!-- End of Content -->
@@ -94,7 +103,6 @@
             });
         })
     </script>
-
 </body>
 
 </html>
