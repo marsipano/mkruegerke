@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prüfungstraining Mockup</title>
+    <!-- Infusion UI Options-->
+    <link rel="stylesheet" href="css/infusion.css">
+    <script type="text/javascript" src="infusion/infusion-uiOptions.js"></script>
+    <!-- Picnic CSS und Anpassungen  -->
+    <link rel="stylesheet" href="css/picnic.min.css">
+    <link rel="stylesheet" href="css/customize.css">
+</head>
+
+<body>
+    <header>
+        <div role="navigation" aria-label="Sprunglink">
+            <a href="#inhalt" id="skiplink">Hauptregion der Seite anspringen</a>
+        </div>
+        <nav>
+            <a href="index.html" class="brand">
+                <img class="logo" src="img/input-checked.png">
+                <span>Pr&uuml;fungstraining</span>
+            </a>
+            <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
+            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation" value="Hauptnavigation">
+            <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
+                <a href="training.html" class="pseudo button">Training</a>
+                <a href="fortschritt.html" class="pseudo button">Fortschritt</a>
+                <a href="profil.html" class="pseudo button">Profil</a>
+                <a href="verwaltung.html" class="pseudo button">Verwaltung</a>
+                <a href="index.html" class="pseudo button">Logout</a>
+            </div>
+        </nav>
+        <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+            <!-- This is the div that will contain the Preference Editor component -->
+            <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+            <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+            <div class="fl-panelBar">
+                <span class="fl-prefsEditor-buttons">
+                <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset">
+                    <span class="fl-icon-undo"></span> reset
+                </button>
+                <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> anpassen </button>
+                </span>
+            </div>
+        </div>
+        <div class="flc-toc-tocContainer" role="navigation" aria-label="Inhaltsverzeichnis"> </div>
+    </header>
+
+    <!-- Content starts here -->
+    <main id="inhalt" tabindex="-1">
+
+        <div class="flex one two-1000">
+            <div>
+                <article class="card">
+                    <header>
+                        <h1>Trainingsinfo</h1>
+                    </header>
+                    <footer>
+                        <div class="flex two">
+                            <label>
+                                erstellt:
+                                <input type="text" readonly value="28.04.2018 13:15">
+                            </label>
+                            <label>
+                                Anzahl Fragen:
+                                <input type="text" readonly value="3">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Themen:
+                                <input type="text" readonly value="Der Betrieb und sein Umfeld, Personal">
+                            </label>
+                            <label>
+                                Beschreibung:
+                                <textarea readonly>dreiteiliges Intermezzo zur Demo des Mockups</textarea>
+                            </label>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <header>
+                        <h2>Beispielfrage (1/3)</h2>
+                    </header>
+                    <p>
+                        Das Berufsausbildungsverh&auml;ltnis beginnt mit einer Probezeit. Wie lange dauert diese nach dem Berufsbildungsgesetz?
+                    </p>
+                    <footer>
+                        <label>
+                            <em>Antwort:</em>
+                            <select>
+                                <option>Zwei Wochen</option>
+                                <option>Einen Monat</option>
+                                <option>Mindestens zwei Wochen, h&ouml;chstens zwei Monate</option>
+                                <option>Mindestens einen, h&ouml;chstens vier Monate</option>
+                                <option>Mindestens zwei, h&ouml;chstens sechs Monate</option>
+                            </select>
+                        </label>
+                        <input value="beantworten" type="submit">
+                        <a class="button" href="#">&uuml;berspringen</a>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Beispielfrage (2/3)</h2>
+                    </header>
+                    <p>
+                        Welche Versicherungen sind Bestandteil des Sozialversicherungsbeitrags?
+                    </p>
+                    <footer>
+                        <em>Antworten:</em><br>
+                        <input id="a1" type="checkbox" aria-labelledby="l1">
+                        <label id="l1" for="a1" class="checkable" role="checkbox" tabindex="0" aria-label="Rentenversicherung">Rentenversicherung</label><br>
+                        <input id="a2" type="checkbox" aria-labelledby="l2">
+                        <label id="l2" for="a2" class="checkable" role="checkbox" tabindex="0" aria-label="Pflegeversicherung">Pflegeversicherung</label><br>
+                        <input id="a3" type="checkbox" aria-labelledby="l3">
+                        <label id="l3" for="a3" class="checkable" role="checkbox" tabindex="0" aria-label="Hausratversicherung">Hausratversicherung</label><br>
+                        <input id="a4" type="checkbox" aria-labelledby="l4">
+                        <label id="l4" for="a4" class="checkable" role="checkbox" tabindex="0" aria-label="Krankenversicherung">Krankenversicherung</label><br>
+                        <input id="a5" type="checkbox" aria-labelledby="l5">
+                        <label id="l5" for="a5" class="checkable" role="checkbox" tabindex="0" aria-label="Rechtschutzversicherung">Rechtschutzversicherung</label><br>
+                        <input id="a6" type="checkbox" aria-labelledby="l6">
+                        <label id="l6" for="a6" class="checkable" role="checkbox" tabindex="0" aria-label="Arbeitslosenversicherung">Arbeitslosenversicherung</label><br>
+                        <input value="beantworten" type="submit">
+                        <a class="button" href="#">&uuml;berspringen</a>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Beispielfrage (3/3)</h2>
+                    </header>
+                    <p>
+                        Bis zu welcher Dauer haben unverschuldet arbeitsunf&auml;hig erkrankte Arbeitnehmer(innen) grunds&auml;tzlich Anspruch auf Fortzahlung des Arbeitsentgelts?
+                    </p>
+                    <footer>
+                        <em>Antwort:</em><br>
+                        <label>
+                            <input type='radio' name="antwort">
+                            <span class="checkable">Vier Wochen</span>
+                        </label><br>
+                        <label>
+                            <input type='radio' name="antwort">
+                            <span class="checkable">Sechs Wochen</span>
+                        </label><br>
+                        <label>
+                            <input type='radio' name="antwort">
+                            <span class="checkable">Acht Wochen</span>
+                        </label><br>
+                        <label>
+                            <input type='radio' name="antwort">
+                            <span class="checkable">Drei Monate</span>
+                        </label><br>
+                        <label>
+                            <input type='radio' name="antwort">
+                            <span class="checkable">Sechs Monate</span>
+                        </label><br>
+                        <input value="beantworten" type="submit">
+                        <a class="button" href="#">&uuml;berspringen</a>
+                    </footer>
+                </article>
+
+            </div>
+        </div>
+    </main>
+    <!-- End of Content -->
+
+    <!-- Initialize UIOptions -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                tocTemplate: "infusion/src/components/tableOfContents/html/TableOfContents.html",
+                terms: {
+                    templatePrefix: "infusion/src/framework/preferences/html",
+                    messagePrefix: "infusion/src/framework/preferences/messages"
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

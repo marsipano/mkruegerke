@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -57,7 +57,7 @@
             <div>
                 <article class="card">
                     <header>
-                        <h1>Training</h1>
+                        <h1>Trainings&uuml;bersicht</h1>
                     </header>
                     <img src="img/konfuzius.gif" alt="Statue von Konfuzius">
                     <footer>
@@ -69,83 +69,10 @@
                 </article>
                 <article class="card">
                     <header>
-                        <h2>Info</h2>
+                        <h2>laufende Trainings:</h2>
                     </header>
                     <footer>
-                        <div class="flex two">
-                            <label>erstellt:
-                            <input type="text" readonly value="28.04.2018 13:15">
-                            </label>
-                            <label>Anzahl Fragen:
-                            <input type="text" readonly value="3">
-                            </label>
-                        </div>
-                        <div>
-                            <label>Themen:
-                            <input type="text" readonly value="Der Betrieb und sein Umfeld, Personal">
-                            </label>
-                            <label>Beschreibung:
-                            <textarea readonly>dreiteiliges Intermezzo zur Demo des Mockups</textarea>
-                            </label>
-                        </div>
-                    </footer>
-                </article>
-            </div>
-            <div>
-                <article class="card">
-                    <header>
-                        <h3>Beispielfrage (1/3)</h3>
-                    </header>
-                    <p>
-                        Das Berufsausbildungsverhältnis beginnt mit einer Probezeit. Wie lange dauert diese nach dem Berufsbildungsgesetz?
-                    </p>
-                    <footer>
-                        <label><em>Antwort:</em>
-                            <select>
-                                <option>Zwei Wochen</option>
-                                <option>Einen Monat</option>
-                                <option>Mindestens zwei Wochen, höchstens zwei Monate</option>
-                                <option>Mindestens einen, höchstens vier Monate</option>
-                                <option>Mindestens zwei, höchstens sechs Monate</option>
-                            </select>
-                        </label>
-                        <input value="beantworten" type="submit">
-                        <a class="button" href="#">&uuml;berspringen</a>
-                    </footer>
-                </article>
-                <article class="card">
-                    <header>
-                        <h3>Beispielfrage (2/3)</h3>
-                    </header>
-                    <p>
-                        Welche Versicherungen sind Bestandteil des Sozialversicherungsbeitrags?
-                    </p>
-                    <footer>
-                        <em>Antworten:</em><br>
-                        <input id="a1" type="checkbox">
-                        <label for="a1" class="checkable">Rentenversicherung</label><br>
-                        <input id="a2" type="checkbox">
-                        <label for="a2" class="checkable">Pflegeversicherung</label><br>
-                        <input id="a3" type="checkbox">
-                        <label for="a3" class="checkable">Hausratversicherung</label><br>
-                        <input id="a4" type="checkbox">
-                        <label for="a4" class="checkable">Krankenversicherung</label><br>
-                        <input id="a5" type="checkbox">
-                        <label for="a4" class="checkable">Rechtschutzversicherung</label><br>
-                        <input id="a5" type="checkbox">
-                        <label for="a5" class="checkable">Arbeitslosenversicherung</label><br>
-                        <input value="beantworten" type="submit">
-                        <a class="button" href="#">&uuml;berspringen</a>
-                    </footer>
-                </article>
-            </div>
-            <div>
-                <article class="card">
-                    <header>
-                        <h3>offene Trainings:</h3>
-                    </header>
-                    <footer>
-                        <table>
+                        <table style="width: 100%;">
                             <thead>
                                 <tr>
                                     <th>erstellt</th>
@@ -157,28 +84,50 @@
                                 <tr>
                                     <td>12.03.18<br>12 Fragen</td>
                                     <td>Betriebliche Organisation</td>
-                                    <td><a class="button" href="#">fortsetzen</a></td>
+                                    <td><a class="button" href="fragen.html">fortsetzen</a></td>
                                 </tr>
                                 <tr>
                                     <td>10.02.18<br>8 Fragen</td>
                                     <td>Programmierung, Datenbanken</td>
-                                    <td><a class="button" href="#">fortsetzen</a></td>
+                                    <td><a class="button" href="fragen.html">fortsetzen</a></td>
                                 </tr>
                                 <tr>
                                     <td>08.01.03<br>10 Fragen</td>
                                     <td>WiSo</td>
-                                    <td><a class="button" href="#">fortsetzen</a></td>
+                                    <td><a class="button" href="fragen.html">fortsetzen</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </footer>
                 </article>
+
+            </div>
+            <div>
                 <article class="card">
                     <header>
-                        <h3>Training erstellen</h4>
+                        <h2>Training erstellen</h2>
                     </header>
                     <footer>
-                        bla bla
+                            <label>
+                                Anzahl Fragen:
+                                <input type="text">
+                            </label>
+                            <fieldset>
+                                <legend>Themen:</legend>
+                                <input id="t1" type="checkbox" aria-labelledby="l1">
+                                <label id="l1" for="t1" class="checkable" role="checkbox" tabindex="0" aria-label="Betriebliche Organisation">Betriebliche Organisation</label><br>
+                                <input id="t2" type="checkbox" aria-labelledby="l2">
+                                <label id="l2" for="t2" class="checkable" role="checkbox" tabindex="0" aria-label="WiSo">WiSo</label><br>
+                                <input id="t3" type="checkbox" aria-labelledby="l3">
+                                <label id="l3" for="t3" class="checkable" role="checkbox" tabindex="0" aria-label="Buchhaltung">Buchhaltung</label><br>
+                                <input id="t4" type="checkbox" aria-labelledby="l4">
+                                <label id="l4" for="t4" class="checkable" role="checkbox" tabindex="0" aria-label="Programmierung">Programmierung</label><br>
+                                <input id="t5" type="checkbox" aria-labelledby="l5">
+                                <label id="l5" for="t5" class="checkable" role="checkbox" tabindex="0" aria-label="Datenbanken">Datenbanken</label><br>
+                                <input id="t6" type="checkbox" aria-labelledby="l6">
+                                <label id="l6" for="t6" class="checkable" role="checkbox" tabindex="0" aria-label="einfache IT-Systeme">einfache IT-Systeme</label><br>
+                                <a class="button" href="frage1.html">Training starten</a>
+                            </fieldset>
                     </footer>
                 </article>
             </div>
