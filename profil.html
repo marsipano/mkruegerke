@@ -51,36 +51,64 @@
     <!-- Content starts here -->
     <main id="inhalt" tabindex="-1">
 
-        <div class="flex one two-1000">
+        <div class="flex one two-800">
             <div>
                 <article class="card">
                     <header>
-                        <h1>Profil</h1>
+                        <h1>Mario Kr&uuml;gerke</h1>
                     </header>
-                    <img src="img/konfuzius.gif" alt="Konfuzius Statue">
-                    <footer>
-                        <blockquote>
-                            Lernen und nicht denken ist unnütz.<br> Denken und nicht lernen ist zwecklos.<br>
-                            <strong>Konfuzius</strong>
-                        </blockquote>
-                    </footer>
-                </article>
-                <article class="card">
-                    <header>
-                        <h3>Neues Training beginnen</h4>
-                    </header>
-                    <footer>
-                        bla bla
-                    </footer>
+                    <label class="dropimage">
+                        <input title="Bild hier ablegen oder klicken" type="file">
+                    </label>
                 </article>
             </div>
             <div>
                 <article class="card">
                     <header>
-                        <h3>laufende Trainings:</h3>
+                        <h2>Daten</h2>
                     </header>
                     <footer>
-                        bla bla
+                        <label>
+                            Nachname:
+                            <input type="text" value="Kr&uuml;gerke">
+                        </label>
+                        <label>
+                            Vorname:
+                            <input type="text" value="Mario">
+                        </label>
+                        <label>
+                            Berufsbild:
+                            <input type="text" readonly value="IK">
+                        </label>
+                        <label>
+                            Ma&szlig;nahme:
+                            <input type="text" readonly value="Umschulung">
+                        </label>
+                        <label>
+                            Gruppe:
+                            <input type="text" readonly value="ITU2016">
+                        </label>
+                        <input type="submit" value="Änderungen speichern">
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Login</h2>
+                    </header>
+                    <footer>
+                        <label>
+                            Username:
+                            <input type="text" readonly value="mkr&uuml;gerke">
+                        </label>
+                        <label>
+                            Passwort:
+                            <input type="password" value="">
+                        </label>
+                        <label>
+                            best&auml;tigen:
+                            <input type="password" value="">
+                        </label>
+                        <input type="submit" value="Passwort ändern">
                     </footer>
                 </article>
             </div>
@@ -92,14 +120,27 @@
     <!-- Initialize UIOptions -->
     <script type="text/javascript">
         $(document).ready(function() {
-            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-                tocTemplate: "infusion/src/components/tableOfContents/html/TableOfContents.html",
-                terms: {
-                    templatePrefix: "infusion/src/framework/preferences/html",
-                    messagePrefix: "infusion/src/framework/preferences/messages"
+                fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                    tocTemplate: "infusion/src/components/tableOfContents/html/TableOfContents.html",
+                    terms: {
+                        templatePrefix: "infusion/src/framework/preferences/html",
+                        messagePrefix: "infusion/src/framework/preferences/messages"
+                    }
+                });
+            })
+            // DropImage Functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            [].forEach.call(document.querySelectorAll('.dropimage'), function(img) {
+                img.onchange = function(e) {
+                    var inputfile = this,
+                        reader = new FileReader();
+                    reader.onloadend = function() {
+                        inputfile.style['background-image'] = 'url(' + reader.result + ')';
+                    }
+                    reader.readAsDataURL(e.target.files[0]);
                 }
             });
-        })
+        });
     </script>
 </body>
 
