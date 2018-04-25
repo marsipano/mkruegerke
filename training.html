@@ -24,9 +24,9 @@
                 <img class="logo" src="img/input-checked.png">
                 <span>Pr&uuml;fungstraining</span>
             </a>
-            <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
-            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation" value="Hauptnavigation">
-            <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
+            <label id="lmenu" for="menu" class="burger pseudo button" aria-label="Menü">Men&uuml;</label>
+            <input type="checkbox" id="menu" class="show" aria-labelledby="lmenu">
+            <div class="menu" role="navigation" aria-label="Hauptnavigation" tabindex="0">
                 <a href="training.html" class="pseudo button">Training</a>
                 <a href="fortschritt.html" class="pseudo button">Fortschritt</a>
                 <a href="profil.html" class="pseudo button">Profil</a>
@@ -109,9 +109,13 @@
                     </header>
                     <footer>
                         <label>
-                                Anzahl Fragen:
-                                <input type="text">
-                            </label>
+                            Anzahl Fragen:
+                            <input type="text">
+                        </label>
+                        <label>
+                            Beschreibung:
+                            <textarea></textarea>
+                        </label>
                         <fieldset>
                             <legend>Themen:</legend>
                             <input id="t1" type="checkbox" aria-labelledby="l1">

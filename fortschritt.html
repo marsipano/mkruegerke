@@ -24,9 +24,9 @@
                 <img class="logo" src="img/input-checked.png">
                 <span>Pr&uuml;fungstraining</span>
             </a>
-            <label for="hauptnavigation" class="burger pseudo button">Men&uuml;</label>
-            <input type="checkbox" id="hauptnavigation" class="show" aria-label="Hauptnavigation" value="Hauptnavigation">
-            <div class="menu" role="navigation" aria-labelledby="hauptnavigation">
+            <label id="lmenu" for="menu" class="burger pseudo button" aria-label="Menü">Men&uuml;</label>
+            <input type="checkbox" id="menu" class="show" aria-labelledby="lmenu">
+            <div class="menu" role="navigation" aria-label="Hauptnavigation" tabindex="0">
                 <a href="training.html" class="pseudo button">Training</a>
                 <a href="fortschritt.html" class="pseudo button">Fortschritt</a>
                 <a href="profil.html" class="pseudo button">Profil</a>
@@ -57,30 +57,78 @@
                     <header>
                         <h1>Trainingsfortschritt</h1>
                     </header>
-                    <img src="img/konfuzius.gif" alt="Konfuzius Statue">
+                    <img src="img/lernfortschritt.jpg" alt="Treppe aus Büchern">
                     <footer>
                         <blockquote>
-                            Lernen und nicht denken ist unnütz.<br> Denken und nicht lernen ist zwecklos.<br>
-                            <strong>Konfuzius</strong>
+                            Alles Leiden kommt aus Nichtwissen.<br>
+                            <strong>Dalai Lama</strong>
                         </blockquote>
-                    </footer>
-                </article>
-                <article class="card">
-                    <header>
-                        <h3>Neues Training beginnen</h3>
-                    </header>
-                    <footer>
-                        bla bla
                     </footer>
                 </article>
             </div>
             <div>
                 <article class="card">
                     <header>
-                        <h3>laufende Trainings:</h3>
+                        <h2>gesamt:</h2>
                     </header>
                     <footer>
-                        bla bla
+                        <div class="flex two">
+                            <label>
+                                abgeschlossene Trainings:
+                                <input type="text" readonly value="23">
+                            </label>
+                            <label>
+                                laufende Trainings:
+                                <input type="text" readonly value="3">
+                            </label>
+                        </div>
+                        <div class="flex two">
+                            <label>
+                                gegebene Antworten:
+                                <input type="text" readonly value="145">
+                            </label>
+                            <label>
+                                davon korrekt:
+                                <input type="text" readonly value="97 (67&percnt;)">
+                            </label>
+                        </div>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>nach Thema:</h2>
+                    </header>
+                    <footer>
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Thema</th>
+                                    <th>Antworten</th>
+                                    <th>korrekt</th>
+                                    <th>Erfolgsquote</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Buchhaltung</td>
+                                    <td>15</td>
+                                    <td>12</td>
+                                    <td>80 &percnt;</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Programmierung</td>
+                                    <td>24</td>
+                                    <td>18</td>
+                                    <td>75 &percnt;</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Datenbanken</td>
+                                    <td>30</td>
+                                    <td>10</td>
+                                    <td>33 &percnt;</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </footer>
                 </article>
             </div>
