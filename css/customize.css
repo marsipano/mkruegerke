@@ -20,3 +20,8 @@ main {
     Width: auto;
     Height: auto;
 }
+
+a.pseudo.button:focus,
+a.pseudo.button:hover {
+    border: 2px solid #0074d9;
+}
