@@ -54,33 +54,111 @@
         <div class="flex one two-1000">
             <div>
                 <article class="card">
-                    <header>
-                        <h1>Verwaltung</h1>
-                    </header>
-                    <img src="img/konfuzius.gif" alt="Konfuzius Statue">
                     <footer>
-                        <blockquote>
-                            Lernen und nicht denken ist unnütz.<br> Denken und nicht lernen ist zwecklos.<br>
-                            <strong>Konfuzius</strong>
-                        </blockquote>
+                        <h1>Verwaltung</h1>
                     </footer>
                 </article>
                 <article class="card">
                     <header>
-                        <h3>Neues Training beginnen</h3>
+                        <h2>Benutzer</h2>
                     </header>
                     <footer>
-                        bla bla
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Gruppe</th>
+                                    <th>Beruf</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Albertsen, Anna</td>
+                                    <td>ITA2016</td>
+                                    <td>IK</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Brunner, Bernd</td>
+                                    <td>ITU2017</td>
+                                    <td>FIA</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Krügerke, Mario</td>
+                                    <td>ITU2016</td>
+                                    <td>IK</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </footer>
                 </article>
             </div>
             <div>
                 <article class="card">
                     <header>
-                        <h3>laufende Trainings:</h3>
+                        <h2>Fragen</h2>
                     </header>
                     <footer>
-                        bla bla
+                        <h3>Filter</h3>
+                        <fieldset>
+                            <label>
+                                <input type='radio' name="suche" checked>
+                                <span class="checkable">Fragetext</span>
+                            </label><br>
+                            <label>
+                                <input type='radio' name="suche">
+                                <span class="checkable">Themen</span>
+                            </label><br>
+                            <label>
+                                <input type='radio' name="suche">
+                                <span class="checkable">Antworten</span>
+                            </label><br>
+                            <label>
+                                enthält:
+                                <input type="text">
+                            </label>
+                        </fieldset>
+                        <input type="submit" value="Suchen">
+                    </footer>
+                </article>
+                <article class="card">
+                    <header>
+                        <h3>Suchergebnisse</h3>
+                    </header>
+                    <footer>
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Themen</th>
+                                    <th>Frage</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Personal</td>
+                                    <td>Das Berufsausbildungsverhältnis beginnt mit einer Probezeit. Wie lange...</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Programmierung</td>
+                                    <td>Welche Kontrollstrukturen verwenden Programmiersprachen zur Erstellung von...</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                                <tr>
+                                    <td>129</td>
+                                    <td>Betriebliche Organisation</td>
+                                    <td>Was geh&ouml;rt zu den Nachteilen der Matrixorganisation?</td>
+                                    <td><a class="button" href="#">bearbeiten</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </footer>
                 </article>
             </div>

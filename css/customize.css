@@ -34,3 +34,21 @@ input[type="text"]:read-only,
 textarea:read-only {
     background-color: #eee;
 }
+
+@media screen and (max-width: 45rem) {
+    tr,
+    th,
+    td {
+        display: block;
+    }
+    tr {
+        padding: .2rem;
+        border-top: 0 none;
+    }
+    th {
+        padding: 0;
+    }
+    td {
+        padding: .2rem 0 0;
+    }
+}
